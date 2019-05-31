@@ -1,3 +1,8 @@
+# Tic Tac Toe
+
+Learning react.js following the tutorial: https://reactjs.org/tutorial/tutorial.html
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
