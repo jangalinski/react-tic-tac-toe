@@ -13,7 +13,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://jangalinski.github.io/react-tic-tac-toe",
+  "homepage": ".",
   "eslintConfig": {
     "extends": "react-app"
   },
