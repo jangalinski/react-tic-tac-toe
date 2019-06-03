@@ -8,8 +8,8 @@
       "type": "image/x-icon"
     }
   ],
-  "start_url": ".",
-  "homepage": "https://jangalinski.github.io/react-tic-tac-toe/",
+  "start_url": "react-tic-tac-toe",
+  "homepage": "https://jangalinski.github.io/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
