@@ -8,7 +8,6 @@ function Square(props) { return (
     </button>
 )}
 
-  
 function Board(props) { 
     var content = []
 
