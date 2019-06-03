@@ -3,6 +3,10 @@
 Learning react.js following the tutorial: https://reactjs.org/tutorial/tutorial.html
 
 
+## Further Information
+
+* reference solution advanced: https://github.com/kissgyorgy/react-gomoku
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
