@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Tic Tac Toe App",
+  "name": "Play tic tac toe online",
   "icons": [
     {
       "src": "favicon.ico",
@@ -9,6 +9,7 @@
     }
   ],
   "start_url": ".",
+  "homepage": "https://jangalinski.github.io/react-tic-tac-toe/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
