@@ -2,26 +2,32 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-function Square(props) { return (
-    <button className="square" onClick={props.onClick}>
-        {props.value}
+const initialState = {
+    history: [{
+        squares: Array(9).fill(null),
+    }],
+    stepNumber: 0,
+    xIsNext: true,
+}
+
+const Context = React.createContext(initialState);
+export const Provider = Context.Provider;
+export const Consumer = Context.Consumer;
+
+const Square = ({value, onClick}) => (
+    <button className="square" onClick={ onClick }>
+        { value }
     </button>
-)}
+)
 
-function Board(props) { 
-    var content = []
-
+const Board = ({ squares, onClick, content = [] }) => { 
     for (let r=0; r<3; r++) {
         let row = []
         for (let i=r*3; i < r*3+3; i++) {
             row.push  (
-                    <Square 
-                        value={ props.squares[i] }
-                        onClick={() => props.onClick(i)}
-                    />
+                    <Square value={ squares[i] } onClick={() => onClick(i)} />
                 )
         }
-    
         content.push( <div className="board-row">{row}</div>)
     }
     
@@ -41,7 +47,7 @@ class Game extends React.Component {
         }
     }
 
-    nextPlayer() { return this.state.xIsNext ? 'X' : 'O' }
+    nextPlayer  = () =>  this.state.xIsNext ? 'X' : 'O'
 
     handleClick(i) {
         const history = this.state.history.slice(0, this.state.stepNumber + 1)
@@ -95,6 +101,7 @@ class Game extends React.Component {
             status = 'Next player: ' + this.nextPlayer();
         }
         return (
+            
             <div className="game">
                 <div className="game-board">
                     <Board 
